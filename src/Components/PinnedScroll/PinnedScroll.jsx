@@ -53,7 +53,7 @@ const PinnedScroll = () => {
                 </div>
                 <div className="Section-employee-card">
             <div className="employee-quote">
-                    <p>There isn’t any way we could have developed our site in the time we did without Netlify.</p>
+                    <p>There isn’t any way we could have developed our site in the time we did without Netlify.{''}</p>
                 </div>
                 <div className="employee-info">
                     <div className="employee-img">
