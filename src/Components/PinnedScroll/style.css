@@ -3,13 +3,14 @@
     justify-content: space-between;
     /* border: 2px solid red; */
     /* height: 100vh; */
+    background: #fff;
 }
 
 .left{
     /* border: 2px solid purple; */
     width: 50%;
     padding: 0 2rem;
-    height: 300vh;
+    /* height: 300vh; */
 }
 
 .detailsWrapper{
@@ -19,16 +20,110 @@
     justify-content: center;
 }
 .details{
-    height: 100vh;
+    height: 200vh;
     /* margin: 800px 0; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: space-around; */
+    padding:10vh 0;
     width: 100%;
     gap: 2rem;
     /* border: 2px solid red; */
 }
+
+.Section-info-text{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 2px solid black; */
+}
+
+.Section-info-text h2{
+    line-height: 1.5;
+    font-size: 3.5rem;
+    font-weight: 900;
+    /* width: 100%; */
+}
+.Section-info-text b{
+    color: #181a1c;
+}
+.Section-info-text p {
+   font-size: 2rem;
+    line-height: 1.5;
+    
+}
+
+.pin-sec-btn{
+    background: #2e51ed;
+    width: 360px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    outline: none;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 8px;
+    color:#edf4ff;
+    transition: 0.2s all ease-in-out;
+}
+.pin-sec-btn:hover{
+    background: #2036a1;
+}
+
+.Section-employee-card{
+    width: 80%;
+    background: #f6f6f7;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
+    padding: 24px 32px;
+}
+
+.employee-info{
+
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.employee-img{
+    height: 84px;
+    width: 84px;
+    background: #8ea1f7;
+    border-radius: 50%;
+    
+}
+
+.employee-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.employee-quote p::before{
+    content: '“';
+}
+
+.employee-quote p{
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #181a1c;
+}
+
+.employee-quote p::after{
+    content: '”';
+}
+
 .headLine{
     background-color: green;
     height: 40px;
@@ -47,7 +142,7 @@
 }
 .imageCard{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     height: 100vh;
     /* border: 2px solid black; */
