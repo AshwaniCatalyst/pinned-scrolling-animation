@@ -3,7 +3,7 @@ import React,{useRef, useEffect} from 'react'
 import "./style.css"
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import Scrollbar from 'smooth-scrollbar'
+// import Scrollbar from 'smooth-scrollbar'
 gsap.registerPlugin(ScrollTrigger);
 const PinnedScroll = () => {
  const pinnedRef = useRef();
