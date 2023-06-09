@@ -1,0 +1,9 @@
+.dummySection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0dca72;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
