@@ -2,8 +2,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* gap: 1rem; */
+    color: aliceblue;
     background: #0dca72;
-    position: sticky;
-    top: 0;
+    /* position: sticky; */
+    /* top: 0; */
     height: 100vh;
+}
+
+
+.staggeredText div{
+    display: inline-block;
+    position: absolute;
+    left: 64%;
+    right: 38%;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    color: rgb(126, 11, 155);
+    font-size: 54px;
 }
