@@ -52,47 +52,69 @@ const PinnedScroll = () => {
             overwrite:'auto'
         })
         });
+      if(i===0){
+        const z1 = gsap.timeline({
+            scrollTrigger:{
+                trigger:section,
+                start:'-10000 center',
+                end:"bottom center",
+                // markers:true,
+                pin:false,
+                scrub:true,
+        }
+    });
+    z1.to(".a3",{
+        y:"5000%",
+        opacity:0
+
+    })
+    z1.to(".a4",{
+        y:"5000%",
+        opacity:0
+
+    })
+    z1.to(".a5",{
+        y:"5000%",
+        opacity:0
+
+    })
+    z1.to(".a6",{
+        y:"5000%",
+        opacity:0
+    })
+    z1.to(".a2",{
+        // delay:0.1,
+        // scale:0,
+        y:"5000%",
+        opacity:0
+    })
+      }
         if(i===0){
             const t1 = gsap.timeline({
                 scrollTrigger:{
                     trigger:section,
-                    start:'-10000 center',
+                    start:'top center',
                     end:"bottom center",
-                    // markers:true,
+                    markers:true,
                     pin:false,
                     scrub:true,
             }
         });
-        t1.to(".a3",{
-            y:"5000%",
-            opacity:0
-
-        })
-        t1.to(".a2",{
-            // delay:0.1,
-            // scale:0,
-            y:"5000%",
-            opacity:0
-        })
-        t1.to(".a1",{
-            y:"5000%",
-            opacity:0
-
-        })
         t1.to(".innerImage",{
             // width:"90%",
             scaleX:1
         })
-        // t1.to(".a1",{
-        //     duration:0.5,
-        //     scale:0.8,
-        //     overwrite:"auto"
-        // });
-        // t1.to(".a1",{
-        //     scale:0.6,
-        //     y:-30,
-        //     // opacity:0
-        // })
+        t1.to(".a1",{
+            duration:1.5,
+            scale:1,
+            overwrite:"auto"
+        });
+        t1.to(".a1",{
+            scale:0.7,
+            y:-30,
+            // opacity:0
+        })
+        
         }
         if(i===1)
         {
@@ -103,7 +125,7 @@ const PinnedScroll = () => {
                     trigger:section,
                     start:"top center",
                     end:"bottom center",
-                    // markers:true,
+                    markers:true,
                     scrub:true,
                     pin:false
                 }
@@ -113,10 +135,10 @@ const PinnedScroll = () => {
                 y:400,
                 x:0,
                 opacity:1,
-                scale:0.7,
+                scale:0.8,
                 overwrite:"auto",
             },{
-                y:0,
+                y:-30,
                 x:0,
                 opacity:1,
                 overwrite:"auto"
@@ -125,6 +147,56 @@ const PinnedScroll = () => {
                  scale:0.7,
                  y:-30,
                 // opacity:0
+            })
+
+
+            s2.fromTo(".a3",{
+                
+                y:400,
+                x:0,
+                opacity:1,
+                scale:0.8,
+                overwrite:"auto",
+            },{
+                y:-30,
+                x:0,
+                opacity:1,
+                overwrite:"auto"
+            });
+            s2.to(".a3",{
+                 scale:0.7,
+                 y:-30,
+                // opacity:0
+            })
+
+
+
+            s2.fromTo(".a4",{
+                
+                y:400,
+                x:0,
+                opacity:1,
+                scale:0.8,
+                overwrite:"auto",
+            },{
+                y:-30,
+                x:0,
+                opacity:1,
+                overwrite:"auto"
+            });
+            s2.to(".a4",{
+                 scale:0.7,
+                 y:-30,
+                // opacity:0
+            })
+            s2.to(".a1",{
+                opacity:0
+            })
+            s2.to(".a2",{
+                opacity:0
+            })
+            s2.to(".a3",{
+                opacity:0
             })
         }
         if(i==2)
@@ -143,7 +215,7 @@ const PinnedScroll = () => {
                 height:"80%"
                 // scaleY:1
             })
-            s3.fromTo(".a2",{
+            s3.fromTo(".a4",{
                 y:-30,
                 x:0,
                 scale:0.7,
@@ -153,7 +225,7 @@ const PinnedScroll = () => {
                 x:-85,
                 scale:0.5
             })
-            s3.fromTo(".a1",{
+            s3.fromTo(".a5",{
                 scale:0.4,
                 y:100,
                 x:-90,
@@ -163,7 +235,7 @@ const PinnedScroll = () => {
                 x:-90,
                 opacity:1
             })
-            s3.fromTo(".a3",{
+            s3.fromTo(".a6",{
              scale:0.4,
              y:35,
              x:120,
@@ -202,7 +274,7 @@ const PinnedScroll = () => {
                 }
             }); 
             
-            s4.fromTo(".a3",{
+            s4.fromTo(".a6",{
                 y:25,
                 x:120,
                 opacity:1
@@ -212,7 +284,7 @@ const PinnedScroll = () => {
                 duration:0.9,
                 opacity:0
             })
-            s4.fromTo(".a1",{
+            s4.fromTo(".a5",{
                 y:70,
                 x:-90,
                 opacity:1
@@ -222,7 +294,7 @@ const PinnedScroll = () => {
                 duration:0.9,
                 opacity:0
             })
-            s4.fromTo(".a2",{
+            s4.fromTo(".a4",{
                 y:-100,
                 x:-100,
                 scale:0.5
@@ -422,6 +494,21 @@ const PinnedScroll = () => {
                         <div ref={(el)=>innerScrollImg.current[2]=el} className='innerImageWrapper a3'>
                         <div className='inner-img-container'>
                             <img src="https://cdn.pixabay.com/photo/2018/10/15/17/50/dog-3749561_640.jpg" alt="img1" />
+                        </div>
+                        </div>
+                        <div ref={(el)=>innerScrollImg.current[3]=el} className='innerImageWrapper a4'>
+                        <div className='inner-img-container'>
+                            <img src="https://cdn.pixabay.com/photo/2017/11/13/08/33/dog-2944964_960_720.jpg" alt="img1" />
+                        </div>
+                        </div>
+                        <div ref={(el)=>innerScrollImg.current[4]=el} className='innerImageWrapper a5'>
+                        <div className='inner-img-container'>
+                            <img src="https://cdn.pixabay.com/photo/2017/04/03/17/35/animals-2198994_640.jpg" alt="img1" />
+                        </div>
+                        </div>
+                        <div ref={(el)=>innerScrollImg.current[5]=el} className='innerImageWrapper a6'>
+                        <div className='inner-img-container'>
+                            <img src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg" alt="img1" />
                         </div>
                         </div>
                     </div>
