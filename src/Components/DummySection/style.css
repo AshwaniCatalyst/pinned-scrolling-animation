@@ -11,13 +11,22 @@
 }
 
 
+.staggeredText{
+    /* border:2px solid grey ; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* gap: 1rem; */
+}
+
 .staggeredText div{
     display: inline-block;
     position: absolute;
-    left: 64%;
-    right: 38%;
+    left: 45%;
+    right: 65%;
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(150%, 150%);
     color: rgb(126, 11, 155);
     font-size: 54px;
 }

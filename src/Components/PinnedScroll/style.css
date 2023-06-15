@@ -22,11 +22,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: 5px solid red; */
 }
 .details{
 
     height: 200%;
-    /* width: 50%; */
+    /* width: 100%; */
     /* margin: 800px 0; */
     display: flex;
     flex-direction: column;
@@ -40,7 +41,10 @@
 }
 
 .info-text-container{
-    height: 100vh; 
+    /* height: 100vh;  */
+    /* border: 2px solid grey; */
+    width:100%;
+    /* text-overflow: clip; */
     display: flex;
     align-items: center;
 }
@@ -48,7 +52,7 @@
 .Section-info-text{
     /* width: 80%; */
     
-
+    width:100%;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -59,6 +63,8 @@
     line-height: 1.5;
     font-size: 3.5rem;
     font-weight: 900;
+    word-break: break-all;
+    word-wrap: break-word;
     /* width: 100%; */
 }
 .Section-info-text b{
@@ -73,7 +79,8 @@
 
 .pin-sec-btn{
     background: #2e51ed;
-    width: 360px;
+    max-width: 360px;
+    width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -83,7 +90,6 @@
     line-height: 1.5;
     outline: none;
     border: none;
-    padding: 8px 24px;
     border-radius: 8px;
     color:#edf4ff;
     transition: 0.2s all ease-in-out;
@@ -105,6 +111,7 @@
     border-radius: 12px;
     box-shadow: 0px 2px 4px rgba(51, 55, 59, 0.08),0px 1px 10px rgba(51, 55, 59, 0.06);
     padding: 24px 32px;
+    /* border: 2px solid black; */
    
 }
 
@@ -114,14 +121,21 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    /* border: 2px solid red; */
+    flex-wrap: wrap;
+    /* justify-content: center; */
     
 }
 
 .employee-img{
-    height: 84px;
-    width: 84px;
+    max-width: 84px;
+    max-height: 84px;
+    height: 100%;
+    width: 100%;
     background: #8ea1f7;
     border-radius: 50%;
+    /* display: flex;
+    align-items: center; */
     
 }
 
@@ -130,6 +144,21 @@
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.employee-details{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    /* border:2px solid yellow */
+}
+.employee-details h3{
+    color: #181a1c;
+    margin: 0;
+}
+.employee-details p{
+    margin: 0;
 }
 
 .employee-quote p::before{
@@ -173,19 +202,23 @@
 .image{
     background: linear-gradient(180deg, rgba(12,38,196,1) 18%, rgba(59,11,103,1) 96%);
     display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
     flex-direction: column;
     justify-content: end;
     /* justify-content: flex-end; */
     position: relative;
-    height: 80%;
+    height:60% ;
+    /* min-height: 80%; */
     width: 80%;
     /* border:12px solid yellow; */
 }
 
 .innerImage{
-    height: 60%;
+   min-height: 60%;
+   /* height: 220px; */
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     /* border:10px solid #ff0000; */
     display: flex;
     align-items: center;
@@ -196,10 +229,9 @@
 }
 
 .innerImageWrapper{
-    /* height: 100%; */
-    /* width: 100%; */
+    height: 80%;
+    width: 95%;
     /* position: absolute; */
-    /* object-fit: cover; */
     /* bottom: 0; */
     
     /* border:10px solid black; */
@@ -214,11 +246,9 @@
     
 }
 
-.inner-img-container{
-    height: 400px;
-    width: 100%;
-    /* border:5px solid yellow; */
-}
+/* .innerImageWrapper img{
+    object-fit: contain;
+} */
 
 .a2{
     /* position: relative;
@@ -228,8 +258,16 @@
     /* gap: 4rem; */
 
 }
-
-.a2 .inner-img-container{
+.inner-img-container img{
+    /* border:5px solid grey; */
+    border-radius: 12px;
+    object-fit: cover;
+}
+.inner-img-container{
+    /* border: 5px solid green; */
+    height: 100%;
+    width: 100%;
+    /* border-radius: 12px; */
     /* display: flex;
     flex-direction: column;
     gap: 2rem; */
@@ -251,9 +289,13 @@
 .a2 img{
     /* border: 2px solid green; */
     border-radius: 12px;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     /* position: absolute;
     bottom: -200%;
     scale: 0.7; */
+}
+
+.a1,.a2,.a3{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

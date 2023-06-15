@@ -17,12 +17,12 @@ useEffect(()=>{
 
   gsap.set(".staggeredText",{autoAlpha:1})
   // anim.from(targets,{opacity:1})
-  anim.from(targets,{y:0, duration:duration, opacity:1, stagger:{
+  anim.from(targets,{y:150, duration:duration, opacity:1, stagger:{
     each:stagger,
     repeatDelay:repeatDelay,
     repeat:-1
   }})
-  .to(targets,{y:-80, duration:duration, opacity:0, stagger:{
+  .to(targets,{y:70, duration:duration, opacity:0, stagger:{
     each:stagger,
     repeatDelay:repeatDelay,
     repeat:-1
@@ -35,6 +35,7 @@ useEffect(()=>{
     <div className='dummySection'>
       <div className='heading'><h1>Dummy Section</h1></div>
         <div className='staggeredText'>
+        {/* <h1>Dummy Section</h1> */}
           <div>Eat</div>
           <div>Sleep</div>
           <div>Code</div>

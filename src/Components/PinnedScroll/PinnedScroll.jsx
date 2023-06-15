@@ -64,14 +64,14 @@ const PinnedScroll = () => {
             }
         });
         t1.to(".a3",{
-            y:400,
+            y:"500%",
             opacity:0
 
         })
         t1.to(".a2",{
             // delay:0.1,
             // scale:0,
-            y:400,
+            y:"500%",
             opacity:0
         })
         t1.to(".a1",{
@@ -91,7 +91,7 @@ const PinnedScroll = () => {
             const s2 = gsap.timeline({
                 scrollTrigger:{
                     trigger:section,
-                    start:"-700 center",
+                    start:"top center",
                     end:"bottom center",
                     // markers:true,
                     scrub:true,
@@ -102,7 +102,7 @@ const PinnedScroll = () => {
                 
                 y:400,
                 opacity:1,
-                scale:0.9,
+                scale:0.7,
                 overwrite:"auto",
             },{
                 y:0,
@@ -110,7 +110,7 @@ const PinnedScroll = () => {
                 overwrite:"auto"
             });
             s2.to(".a2",{
-                 scale:0.8,
+                 scale:0.7,
                  y:-30,
                 // opacity:0
             })
@@ -120,7 +120,7 @@ const PinnedScroll = () => {
             const s3 = gsap.timeline({
                 scrollTrigger:{
                     trigger:section,
-                    start:"-700 center",
+                    start:"top center",
                     end:"bottom center",
                     // markers:true,
                     scrub:true,
@@ -130,7 +130,7 @@ const PinnedScroll = () => {
              s3.fromTo(".a3",{
                 y:400,
                 opacity:1,
-                scale:0.9,
+                scale:0.7,
                 overwrite:"auto",
             },{
                 y:-30,
@@ -287,12 +287,12 @@ const PinnedScroll = () => {
                     <div  className='innerImage'>
                         <div ref={(el)=>innerScrollImg.current[0]=el} className='innerImageWrapper a1'>
                         <div className='inner-img-container'>
-                            <img src="https://www.netlify.com/v3/img/build/QmlCE3N_bG-1280.png" alt="img1" />
+                            <img src="https://cdn.pixabay.com/photo/2016/02/18/18/37/puppy-1207816_640.jpg" alt="img1" />
                         </div>
                         </div>
                         <div ref={(el)=>innerScrollImg.current[1]=el} className='innerImageWrapper a2' >
                         <div className='inner-img-container'>
-                            <img src="https://d33wubrfki0l68.cloudfront.net/925d801b639cc95847030534d35bd32bedaa5514/0b9f4/v3/img/build/wdtsigm5p_-1000.avif" alt="img1" />
+                            <img src="https://cdn.pixabay.com/photo/2018/03/06/21/09/easter-3204589_640.jpg" alt="img1" />
                         </div>
                         {/* <div className='inner-img-container'>
                             <img src="https://d33wubrfki0l68.cloudfront.net/60d1abdade971ab83baed2ef21fbfa55ad362724/2ed4d/v3/img/build/mcsogf53un-1000.avif" alt="img1" />
@@ -303,7 +303,7 @@ const PinnedScroll = () => {
                         </div>
                         <div ref={(el)=>innerScrollImg.current[2]=el} className='innerImageWrapper a3'>
                         <div className='inner-img-container'>
-                            <img src="https://d33wubrfki0l68.cloudfront.net/60d1abdade971ab83baed2ef21fbfa55ad362724/2ed4d/v3/img/build/mcsogf53un-1000.avif" alt="img1" />
+                            <img src="https://cdn.pixabay.com/photo/2018/10/15/17/50/dog-3749561_640.jpg" alt="img1" />
                         </div>
                         </div>
                     </div>
