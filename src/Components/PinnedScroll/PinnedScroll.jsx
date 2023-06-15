@@ -149,22 +149,22 @@ const PinnedScroll = () => {
                 scale:0.7,
 
             },{
-                y:-100,
-                x:-100,
+                y:-85,
+                x:-85,
                 scale:0.5
             })
             s3.fromTo(".a1",{
                 scale:0.4,
-                y:120,
+                y:100,
                 x:-90,
                 opacity:0
             },{
-                y:100,
+                y:70,
                 x:-90,
                 opacity:1
             })
             s3.fromTo(".a3",{
-             scale:0.3,
+             scale:0.4,
              y:35,
              x:120,
              opacity:0
@@ -213,9 +213,10 @@ const PinnedScroll = () => {
                 opacity:0
             })
             s4.fromTo(".a1",{
-                y:100,
+                y:70,
                 x:-90,
                 opacity:1
+                
             },{
                 x:300,
                 duration:0.9,
