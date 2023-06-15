@@ -140,7 +140,7 @@ const PinnedScroll = () => {
                 }
             });
             s3.to(".innerImage",{
-                height:"90%"
+                height:"80%"
                 // scaleY:1
             })
             s3.fromTo(".a2",{
@@ -208,7 +208,8 @@ const PinnedScroll = () => {
                 opacity:1
             },{
                 y:45,
-                x:500,
+                x:300,
+                duration:0.9,
                 opacity:0
             })
             s4.fromTo(".a1",{
@@ -216,7 +217,8 @@ const PinnedScroll = () => {
                 x:-90,
                 opacity:1
             },{
-                x:500,
+                x:300,
+                duration:0.9,
                 opacity:0
             })
             s4.fromTo(".a2",{
