@@ -64,14 +64,14 @@ const PinnedScroll = () => {
             }
         });
         t1.to(".a3",{
-            y:"500%",
+            y:"5000%",
             opacity:0
 
         })
         t1.to(".a2",{
             // delay:0.1,
             // scale:0,
-            y:"500%",
+            y:"5000%",
             opacity:0
         })
         t1.to(".a1",{
