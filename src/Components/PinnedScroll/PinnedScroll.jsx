@@ -56,7 +56,7 @@ const PinnedScroll = () => {
             const t1 = gsap.timeline({
                 scrollTrigger:{
                     trigger:section,
-                    start:'-700 center',
+                    start:'-10000 center',
                     end:"bottom center",
                     // markers:true,
                     pin:false,
@@ -75,14 +75,24 @@ const PinnedScroll = () => {
             opacity:0
         })
         t1.to(".a1",{
-            duration:0.5,
-            scale:0.8,
-            overwrite:"auto"
-        });
-        t1.to(".a1",{
-            scale:0.6,
-            y:-30,
+            y:"5000%",
+            opacity:0
+
         })
+        t1.to(".innerImage",{
+            // width:"90%",
+            scaleX:1
+        })
+        // t1.to(".a1",{
+        //     duration:0.5,
+        //     scale:0.8,
+        //     overwrite:"auto"
+        // });
+        // t1.to(".a1",{
+        //     scale:0.6,
+        //     y:-30,
+        //     // opacity:0
+        // })
         }
         if(i===1)
         {
@@ -101,11 +111,13 @@ const PinnedScroll = () => {
             s2.fromTo(".a2",{
                 
                 y:400,
+                x:0,
                 opacity:1,
                 scale:0.7,
                 overwrite:"auto",
             },{
                 y:0,
+                x:0,
                 opacity:1,
                 overwrite:"auto"
             });
@@ -120,26 +132,102 @@ const PinnedScroll = () => {
             const s3 = gsap.timeline({
                 scrollTrigger:{
                     trigger:section,
-                    start:"top center",
+                    start:"-700 center",
                     end:"bottom center",
                     // markers:true,
                     scrub:true,
                     pin:false
                 }
             });
-             s3.fromTo(".a3",{
-                y:400,
-                opacity:1,
-                scale:0.7,
-                overwrite:"auto",
-            },{
+            s3.to(".innerImage",{
+                height:"90%"
+                // scaleY:1
+            })
+            s3.fromTo(".a2",{
                 y:-30,
-                opacity:1,
-                overwrite:"auto"
-            });
-            s3.to(".a3",{
-                // y:100,
-                // opacity:0
+                x:0,
+                scale:0.7,
+
+            },{
+                y:-100,
+                x:-100,
+                scale:0.5
+            })
+            s3.fromTo(".a1",{
+                scale:0.4,
+                y:120,
+                x:-90,
+                opacity:0
+            },{
+                y:100,
+                x:-90,
+                opacity:1
+            })
+            s3.fromTo(".a3",{
+             scale:0.3,
+             y:35,
+             x:120,
+             opacity:0
+            },{
+                y:25,
+                x:120,
+                opacity:1
+            })
+
+
+            //  s3.fromTo(".a3",{
+            //     y:400,
+            //     opacity:1,
+            //     scale:0.7,
+            //     overwrite:"auto",
+            // },{
+            //     y:-30,
+            //     opacity:1,
+            //     overwrite:"auto"
+            // });
+            // s3.to(".a3",{
+            //     // y:100,
+            //     // opacity:0
+            // })
+        }
+        if(i===3){
+            const s4 = gsap.timeline({
+                scrollTrigger:{
+                    trigger:section,
+                    start:"top center",
+                    end:"bottom center",
+                    // markers:true,
+                    scrub:true,
+                    pin:false
+                }
+            }); 
+            
+            s4.fromTo(".a3",{
+                y:25,
+                x:120,
+                opacity:1
+            },{
+                y:45,
+                x:500,
+                opacity:0
+            })
+            s4.fromTo(".a1",{
+                y:100,
+                x:-90,
+                opacity:1
+            },{
+                x:500,
+                opacity:0
+            })
+            s4.fromTo(".a2",{
+                y:-100,
+                x:-100,
+                scale:0.5
+            },{
+                y:0,
+                x:0,
+                scale:0.7,
+                duration:0.9
             })
         }
     })
@@ -278,6 +366,33 @@ const PinnedScroll = () => {
             </div>
                 </div>
                 
+                </div>
+                <div ref={(el)=>scrollingSectionsRef.current[3]=el} className="details  d1" data-nextbgcolor="linear-gradient(180deg, rgba(12,38,196,1) 18%, rgba(59,11,103,1) 96%)">
+                <div className="info-text-container">
+                <div className="Section-info-text">
+                <h2>An exciting<br/>development for<br/>local development</h2>
+                <p><b>Netlify’s full platform in your terminal.</b><br></br>
+                Spin up a project in seconds, configure<br/>your build, test edge and serverless<br/>functions, and deploy globally — all from<br/>your command line.</p>
+                <button className='pin-sec-btn'><a href="">Launch your project now</a></button>
+                </div>
+                </div>
+                
+                <div className='employeeCardContainer '>
+                <div className="Section-employee-card">
+            <div className="employee-quote">
+                    <p>There isn’t any way we could have developed our site in the time we did without Netlify.{''}</p>
+                </div>
+                <div className="employee-info">
+                    <div className="employee-img">
+                        <img src="https://d33wubrfki0l68.cloudfront.net/e9b5803840094d2583bc945e2a9c3cf2abc3fbe9/22b82/v3/img/build/xth_gr38jk-80.webp"  alt="employee-img"/>
+                    </div>
+                    <div className="employee-details">
+                        <h3>Erin Kissane</h3>
+                        <p>CO-FOUNDER, THE COVID TRACKING PROJECT</p>
+                    </div>
+                </div>
+            </div>
+                </div>
                 </div>
             </div>
         </div>
