@@ -95,7 +95,7 @@ const PinnedScroll = () => {
                     trigger:section,
                     start:'top center',
                     end:"bottom center",
-                    markers:true,
+                    // markers:true,
                     pin:false,
                     scrub:true,
             }
@@ -125,7 +125,7 @@ const PinnedScroll = () => {
                     trigger:section,
                     start:"top center",
                     end:"bottom center",
-                    markers:true,
+                    // markers:true,
                     scrub:true,
                     pin:false
                 }
