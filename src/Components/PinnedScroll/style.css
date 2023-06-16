@@ -13,7 +13,7 @@
 .left{
     /* border: 2px solid purple; */
     width: 50%;
-    padding: 0 2rem;
+    padding: 100px 2rem;
     /* height: 300vh; */
 }
 
@@ -60,8 +60,8 @@
 }
 
 .Section-info-text h2{
-    line-height: 1.5;
-    font-size: 3.5rem;
+    line-height: 48px;
+    font-size: 40px;
     font-weight: 900;
     word-break: break-all;
     word-wrap: break-word;
@@ -71,7 +71,7 @@
     color: #181a1c;
 }
 .Section-info-text p {
-   font-size: 2rem;
+   font-size: 18px;
     line-height: 1.5;
     color: #000;
     
@@ -85,7 +85,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
     outline: none;
@@ -155,10 +155,13 @@
 }
 .employee-details h3{
     color: #181a1c;
+    font-weight: 700;
     margin: 0;
+    font-size: 18px;
 }
 .employee-details p{
     margin: 0;
+    font-size: 16px
 }
 
 .employee-quote p::before{
@@ -166,7 +169,7 @@
 }
 
 .employee-quote p{
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.5;
     color: #181a1c;
